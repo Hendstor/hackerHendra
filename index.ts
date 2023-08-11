@@ -5,3 +5,5 @@ export function renderedOut (what: string = inPutString): string {
 }
 
 console.log(renderedOut())
+
+// comment
