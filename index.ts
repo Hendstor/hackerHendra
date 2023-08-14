@@ -1,29 +1,46 @@
-import { add } from "./practice/a_veryEasy/a1";
-
 const inPutString = '"This is the output of TypeScript Project"';
-
 export function renderedOut (what: string = inPutString): string {
-  return `outPrinted as : ${what}! `;
+  return `\n******************************************* \n${what}!  \n`;
 }
+console.log(renderedOut());
 
-// console.log(renderedOut())
 
-// comment
+//start
+//===================================================================//
 
-// import
-
-const out = add(1, 1)
-console.log(out)
-
+//***
+// import { remainder } from "./practice/aVeryEasy/a2";
+// const out = remainder(1, 1);
 // const testCases = [
-//   [1, 2],
-//   [2, 3],
-//   [10, 20]
+//   [10, 2],
+//   [20, 3],
+//   [100, 20]
 // ]
-
 // for (let i = 0; i < testCases.length; i++) {
-//   const out = add(testCases[i][0], testCases[i][1])
-//   console.log(`testCase: ${JSON.stringify(testCases[i])}, out: ${out}`)
+//   const out = remainder(testCases[i][0], testCases[i][1])
+//   console.log(`testCase: ${JSON.stringify(testCases[i])}, outPut: ${out}`)
 // }
-// aVeryEasy
-// a_very_easy
+//***
+
+
+//***
+import { reverse } from "./practice/aVeryEasy/a3";
+const out = reverse;
+const testCases = [
+  [1, 2, 3]
+]
+for (let i = 0; i < testCases.length; i++) {
+  const out = reverse(testCases[i][0])
+  console.log(`testCase: ${JSON.stringify(testCases[i])}, outPut: ${out}`)
+}
+//***
+
+
+
+
+
+
+
+//end
+//===================================================================//
+console.log(`*******************************************\n`)
