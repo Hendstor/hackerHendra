@@ -1,7 +1,10 @@
-export function reverse(arr: any){
+export function reverse(arr: any[]){
     let reversed = [];
-    for(let i = 0; i < arr.length; i++){
-        reversed.push(arr[i]);
+    console.log(`reverse arr: ${arr}`)
+    for(let i = arr.length - 1; i >= 0; i--){
+        const elt = arr[i];
+        reversed.push(elt);
+        console.log(`i: ${i}, elt: ${elt}, reversed: ${reversed}`)
     }
     return reversed;
 }
