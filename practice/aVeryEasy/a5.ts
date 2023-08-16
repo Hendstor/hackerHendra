@@ -1,15 +1,10 @@
 export function deStructureArr(arr: any[]){
-    let newArr = [];
-    // console.log(`arr: ${arr}`)
-    for(let i = 0; i < arr.length; i++){
-        const itg = arr[i];
-        const newHead = arr[arr.length-1];
+        console.log(`origin: ${JSON.stringify, arr}   length: ${arr.length}`)
+        const newHead = arr[arr.length - 1];
         const newTail = arr[0];
-        // twisted.push()  
-        newArr.push(arr.shift(), newHead);
-        console.log(`newHead: ${newHead}, newTail: ${newTail}, newArr: ${newArr}`)
-    }
-    return newArr;
-
-
+        arr[0] = newHead;
+        arr[(arr.length) - 1] = newTail;
+        console.log(`newHead: ${newHead}   newTail: ${newTail}`);
+        return (arr)
+        
 }

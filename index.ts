@@ -60,25 +60,20 @@ console.log(renderedOut());
 
 //*** "a5"
 import { deStructureArr } from "./practice/aVeryEasy/a5";
-const testCases = [
- [1,2,3,4,5],
- [6,7,8,9,10],
- [11,12,13,14,15]
-]
-for (let i = 0; i < testCases.length; i++) {
-  const testCase = testCases[i]
-  // console.log(`i: ${i}, testCase: ${testCase}`)
-  // console.log(case)
-  const out = deStructureArr(testCase)
-  console.log(`testCase: ${[i]}, outPut: ${out}`)
-}
+const testCases = [1,2,3,4,5,]
+//  [1,2,3,4,5,],
+//  [6,7,8,9,10],
+//  [11,12,13,14,15]
+
+  const out = deStructureArr(testCases);
+  console.log(`outPut: ${out}`)
 //***
 
 
 
 
 // example of console logging a very basic & simple loop :
-// for (let i = 0; i < 100; i++) {
+// for (let i = 0; i < 3; i++) {
 //   console.log(i)
 // }
 
