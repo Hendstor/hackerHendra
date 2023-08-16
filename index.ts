@@ -59,15 +59,36 @@ console.log(renderedOut());
 
 
 //*** "a5"
-import { deStructureArr } from "./practice/aVeryEasy/a5";
-const testCases = [1,2,3,4,5,]
-//  [1,2,3,4,5,],
-//  [6,7,8,9,10],
-//  [11,12,13,14,15]
+// import { deStructureArr } from "./practice/aVeryEasy/a5";
+// const testCases = [1,2,3,4,5,]
+// //  [1,2,3,4,5,],
+// //  [6,7,8,9,10],
+// //  [11,12,13,14,15]
 
-  const out = deStructureArr(testCases);
-  console.log(`outPut: ${out}`)
+//   const out = deStructureArr(testCases);
+//   console.log(`outPut: ${out}`)
 //***
+
+
+//*** "a51"
+import { multyHeadNTail } from "./practice/aVeryEasy/a51";
+const testCases = [
+ [1,2,3,4,5,],
+ [6,7,8,9,10,11],
+ [11,12,13,14,15,16,17]
+]
+
+for (let i = 0; i < testCases.length; i++){
+  
+  console.log(`origin: ${JSON.stringify, testCases[i]}   length: ${testCases[i].length}`);
+  const out = multyHeadNTail(testCases);
+  console.log(`outPut: ${out}\n`) 
+}
+
+  
+//***
+
+
 
 
 
