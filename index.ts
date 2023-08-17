@@ -137,24 +137,43 @@ console.log(renderedOut());
 
 
 //*** "a9"
-import { circleOrSquare } from "./practice/aVeryEasy/a9";
+// import { circleOrSquare } from "./practice/aVeryEasy/a9";
+// const testCasesArr = [
+//  [2, 4],
+//  [5, 150],
+//  [10, 25]
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   const [a, b] = testCase;
+//   const cirA = Math.round(2 * 3.14 * a);
+//   const cirB = Math.round((Math.sqrt(b)) * 4);
+//   const sqrtSym = "\u221A";
+//   console.log(`ArrayToCheck, circleRadius:(${JSON.stringify, a}) & squareArea:(${b})`);
+//   console.log(`circleCrf: 2 * 3.14 * ${JSON.stringify, a} = ${cirA}`);
+//   console.log(`squareCrf: (${sqrtSym}${JSON.stringify, b}) * 4 = ${cirB}`);
+//   const out = circleOrSquare(a,b);
+//   console.log(`finalCheck: circleCrf > squareCrf, outPut: ${out} \n`) 
+// }
+//***
+
+
+//*** "a10"
+import { firstLast } from "./practice/aVeryEasy/a10";
 const testCasesArr = [
- [2, 4],
- [5, 150],
- [10, 25]
+ "Michelle",
+ "Shinta",
+ "Wayan"
 ]
 
 for (let i = 0; i < testCasesArr.length; i++){
   const testCase = testCasesArr[i];
-  const [a, b] = testCase;
-  const cirA = Math.round(2 * 3.14 * a);
-  const cirB = Math.round((Math.sqrt(b)) * 4);
-  const sqrtSym = "\u221A";
-  console.log(`ArrayToCheck, circleRadius:(${JSON.stringify, a}) & squareArea:(${b})`);
-  console.log(`circleCrf: 2 * 3.14 * ${JSON.stringify, a} = ${cirA}`);
-  console.log(`squareCrf: (Math.sqrt(${JSON.stringify, b})) * 4 = ${cirB}`);
-  const out = circleOrSquare(a,b);
-  console.log(`finalCheck: circleCrf > squareCrf, outPut: ${out} \n`) 
+  const [a,b, ...rest] = testCase;
+  const z = testCase[testCase.length-1];
+  console.log(`inputToConcat, firstElm:(${JSON.stringify, a}) & lastElm:(${z})`);
+  const out = firstLast(testCase);
+  console.log(`outPut: ${out} \n`) 
 }
 //***
 
