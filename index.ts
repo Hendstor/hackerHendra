@@ -60,32 +60,102 @@ console.log(renderedOut());
 
 //*** "a5"
 // import { deStructureArr } from "./practice/aVeryEasy/a5";
-// const testCases = [1,2,3,4,5,]
-// //  [1,2,3,4,5,],
-// //  [6,7,8,9,10],
-// //  [11,12,13,14,15]
+// const testCase = [1,2,3,4,5,]
 
-//   const out = deStructureArr(testCases);
+//   const out = deStructureArr(testCase);
 //   console.log(`outPut: ${out}`)
 //***
 
 
-//*** "a51"
-import { multyHeadNTail } from "./practice/aVeryEasy/a51";
-const testCases = [
- [1,2,3,4,5,],
- [6,7,8,9,10,11],
- [11,12,13,14,15,16,17]
+//*** "a5 with multiple testCasesArr"
+// import { deStructureArr } from "./practice/aVeryEasy/a5";
+// const testCasesArr = [
+//  [1,2,3,4,5,],
+//  [6,7,8,9,10,11],
+//  [11,12,13,14,15,16,17]
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i]
+//   // console.log(`origin: ${JSON.stringify, testCase}   length: ${testCasesArr[i].length}`);
+//   const out = deStructureArr(testCase);
+//   console.log(`outPut: ${out}\n`) 
+// }
+//***
+
+
+//*** "a6"
+// import { inchesToFeet } from "./practice/aVeryEasy/a6";
+// const testCasesArr = [
+//  10,
+//  456,
+//  789
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i]
+//   console.log(`NumberToConvert: ${JSON.stringify, testCase} inches`);
+//   const out = inchesToFeet(testCase);
+//   console.log(`outPut: ${out} feet \n`) 
+// }
+//***
+
+
+//*** "a7"
+// import { arrToStr } from "./practice/aVeryEasy/a7";
+// const testCasesArr = [
+//  ['1', '2', '3'],
+//  [4,5,6],
+//  ["seven", 8, "nine"]
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   console.log(`ArrayToConvert: ${JSON.stringify, testCase}`);
+//   const out = arrToStr(testCase);
+//   console.log(`outPutText: ${out} \n`) 
+// }
+//***
+
+
+//*** "a8"
+// import { concat } from "./practice/aVeryEasy/a8";
+// const testCasesArr = [
+//  [['1', '2', '3'], [4,5,6]],
+//  [["seven", 8, "nine"], [10, 11, 12]],
+//  [[13, "fourTeen", 15], [16, "sevenTeen", 18]]
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   const [a, b] = testCase;
+//   console.log(`ArrayToConcat, Arr1:(${JSON.stringify, a}) and Arr2:(${b})`);
+//   const out = concat(a,b);
+//   console.log(`outPutText: ${out} \n`) 
+// }
+//***
+
+
+//*** "a9"
+import { circleOrSquare } from "./practice/aVeryEasy/a9";
+const testCasesArr = [
+ [2, 4],
+ [5, 150],
+ [10, 25]
 ]
 
-for (let i = 0; i < testCases.length; i++){
-  
-  console.log(`origin: ${JSON.stringify, testCases[i]}   length: ${testCases[i].length}`);
-  const out = multyHeadNTail(testCases);
-  console.log(`outPut: ${out}\n`) 
+for (let i = 0; i < testCasesArr.length; i++){
+  const testCase = testCasesArr[i];
+  const [a, b] = testCase;
+  const cirA = Math.round(2 * 3.14 * a);
+  const cirB = Math.round((Math.sqrt(b)) * 4);
+  const sqrtSym = "\u221A";
+  console.log(`ArrayToCheck, circleRadius:(${JSON.stringify, a}) & squareArea:(${b})`);
+  console.log(`circleCrf: 2 * 3.14 * ${JSON.stringify, a} = ${cirA}`);
+  console.log(`squareCrf: (Math.sqrt(${JSON.stringify, b})) * 4 = ${cirB}`);
+  const out = circleOrSquare(a,b);
+  console.log(`finalCheck: circleCrf > squareCrf, outPut: ${out} \n`) 
 }
-
-  
 //***
 
 
