@@ -160,24 +160,42 @@ console.log(renderedOut());
 
 
 //*** "a10"
-import { firstLast } from "./practice/aVeryEasy/a10";
+// import { firstLast } from "./practice/aVeryEasy/a10";
+// const testCasesArr = [
+//  "Michelle",
+//  "Shinta",
+//  "Wayan"
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   const [a,b, ...rest] = testCase;
+//   const z = testCase[testCase.length-1];
+//   console.log(`inputToConcat, firstElm:(${JSON.stringify, a}) & lastElm:(${z})`);
+//   const out = firstLast(testCase);
+//   console.log(`outPut: ${out} \n`) 
+// }
+//***
+
+
+//*** "a11"
+import { oneHeadMoreTail } from "./practice/aVeryEasy/a11";
 const testCasesArr = [
- "Michelle",
- "Shinta",
- "Wayan"
+ ["1", "2", "3", "4", "5"],
+ ['6', "7", "8", "9"],
+ ["head", "neck", "shoulder", "stomach", "tail"]
 ]
 
 for (let i = 0; i < testCasesArr.length; i++){
   const testCase = testCasesArr[i];
-  const [a,b, ...rest] = testCase;
-  const z = testCase[testCase.length-1];
-  console.log(`inputToConcat, firstElm:(${JSON.stringify, a}) & lastElm:(${z})`);
-  const out = firstLast(testCase);
-  console.log(`outPut: ${out} \n`) 
+  const [a, ...rest] = testCase;
+  const head = a;
+  const tail = rest;
+  console.log(`input: ${testCase} \nhead:(${JSON.stringify, a}), tail:(${tail})`);
+  const out = oneHeadMoreTail(testCase);
+  console.log(`outPut: ${out}\n`)
 }
 //***
-
-
 
 
 
