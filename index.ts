@@ -179,25 +179,139 @@ console.log(renderedOut());
 
 
 //*** "a11"
-import { oneHeadMoreTail } from "./practice/aVeryEasy/a11";
+// import { oneHeadMoreTail } from "./practice/aVeryEasy/a11";
+// const testCasesArr = [
+//  ["1", "2", "3", "4", "5"],
+//  ['6', "7", "8", "9"],
+//  ["head", "neck", "shoulder", "stomach", "tail"]
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   const [a, ...rest] = testCase;
+//   const head = a;
+//   const tail = rest;
+//   console.log(`input: ${testCase} \nhead:(${JSON.stringify, a}), tail:(${tail})`);
+//   const out = oneHeadMoreTail(testCase);
+//   console.log(`outPut: ${out}\n`)
+// }
+//***
+
+
+//*** "a12"
+// import { getMultipliedArr } from "./practice/aVeryEasy/a12";
+// const testCasesArr = [
+//  [1, 2, 3, 4, 5],
+//  [6, 7, 8],
+//  [0, 9, 10]
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   // [a] = testCase; 
+//   testCase[i] = testCase[i] * 2;
+//   console.log(`testCase: ${testCase} \nmultiplyByTwo:(${JSON.stringify(testCase)}*2)`);
+//   const out = getMultipliedArr(testCase);
+//   console.log(`outPut: ${out}\n`)
+// }
+//***
+
+
+//*** "a13"
+// import { evenOrOdd } from "./practice/aVeryEasy/a13";
+// const testCasesArr = [
+//  [1, 2, 3, 4],
+//  [6, 7, 8],
+//  [0, 8, 10]
+// ]
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   const out = evenOrOdd(testCase);
+//   console.log(`testCase: ${testCase} \nsumArray:(SUM${JSON.stringify(testCase)})=${out[0]}`);
+//   console.log(`outPut: ${out[1]}\n`)
+// }
+//***
+
+
+//*** "a14"
+import { sumMinimums } from "./practice/aVeryEasy/a14";
 const testCasesArr = [
- ["1", "2", "3", "4", "5"],
- ['6', "7", "8", "9"],
- ["head", "neck", "shoulder", "stomach", "tail"]
+ [1, 2, 3, 4, 5],
+ [6, 7, 8],
+ [0, 9, 10]
 ]
 
 for (let i = 0; i < testCasesArr.length; i++){
   const testCase = testCasesArr[i];
-  const [a, ...rest] = testCase;
-  const head = a;
-  const tail = rest;
-  console.log(`input: ${testCase} \nhead:(${JSON.stringify, a}), tail:(${tail})`);
-  const out = oneHeadMoreTail(testCase);
-  console.log(`outPut: ${out}\n`)
+  const out = sumMinimums(testCase);
+  console.log(`testCase: ${testCase} \n(mindex${[i]} : ${JSON.stringify(out)})`);
+} 
+// let minTestCasesArr = [];
+for(let i=0; i<testCasesArr.length; i++){
+  // const minTestCasesArr = [];
+  const testCase = testCasesArr[i];
+  const out = sumMinimums(testCase); 
+  // let minTestCasesArr = minTestCase[i];
+  console.log(`   \noutPut: ${out}\n`);
 }
 //***
 
 
+//*** "a15"
+// import { oddSum } from "./practice/aVeryEasy/a15";
+// const testCasesArr = [
+//  [1, 2, 3, 4, 5],
+//  [6, 7, 8],
+//  [0, 9, 10]
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   // [a] = testCase; 
+//   // testCase[i] = testCase[i] * 2;
+//   console.log(`testCase: ${testCase} \nsumArray:(SUM${JSON.stringify(testCase)})`);
+//   const out = oddSum(testCase);
+//   console.log(`outPut: ${out}\n`)
+// }
+//***
+
+
+//*** "a16"
+// import { removeNull } from "./practice/aVeryEasy/a16";
+// const testCasesArr = [
+//  [1, 2, 3, 4, 5],
+//  [6, 7, 8],
+//  [0, 9, 10]
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   // [a] = testCase; 
+//   // testCase[i] = testCase[i] * 2;
+//   console.log(`testCase: ${testCase} \nsumArray:(SUM${JSON.stringify(testCase)})`);
+//   const out = removeNull(testCase);
+//   console.log(`outPut: ${out}\n`)
+// }
+//***
+
+
+//*** "a17"
+// import { leapYear } from "./practice/aVeryEasy/a17";
+// const testCasesArr = [
+//  [1, 2, 3, 4, 5],
+//  [6, 7, 8],
+//  [0, 9, 10]
+// ]
+
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   // [a] = testCase; 
+//   // testCase[i] = testCase[i] * 2;
+//   console.log(`testCase: ${testCase} \nsumArray:(SUM${JSON.stringify(testCase)})`);
+//   const out = leapYear(testCase);
+//   console.log(`outPut: ${out}\n`)
+// }
+//***
 
 
 // example of console logging a very basic & simple loop :
