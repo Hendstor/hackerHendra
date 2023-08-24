@@ -1,7 +1,8 @@
 export function sumMinimums(arr: number[]) {
-	const minArr = 0;
+	// const arr = [];
     for(let i=0; i<arr.length; i++){
-        const minArr = Math.min(i);
+        // arr = Math.min(arr);
     } 
-    return minArr
+    // VERY VERY BAD: [i] = 
+    return arr
 }

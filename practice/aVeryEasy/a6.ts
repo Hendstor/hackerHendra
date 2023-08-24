@@ -3,6 +3,6 @@ export function inchesToFeet(inches: number): number {
         return 0
     } else {
         // TODO: make sure you round down the feet. Return only integers
-        return inches / 12
+        return Math.floor((inches / 12))
     }
 }

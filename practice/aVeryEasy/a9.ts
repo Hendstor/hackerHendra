@@ -1,12 +1,12 @@
-export function circleOrSquare(rad: number, area: number){
-    // TODO: make sure your variable names are meaningful, rad -> circleRadius, cirA?, cirB?
+export function circleOrSquare(radius: number, area: number){
+    // TODO: make sure your variable names are meaningful, rad -> circleRadius, cirCrf?, squCrf?
     // TODO: use Math package for the value of Pi
-    // rad is a, wtf is this?
-    const targetArr = [rad, area];
-    const [a, b] = targetArr;
-    const cirA = 2 * 3.14 * a; 
-    const cirB = (Math.sqrt(b)) * 4;
-    if(cirA > cirB){
+    // rad is radius, wtf is this?
+    const arr = [radius, area];
+    // const [radius, area];
+    const cirCrf = 2 * Math.PI * radius; 
+    const squCrf = (Math.sqrt(area)) * 4;
+    if(cirCrf > squCrf){
         return true;
     } else {
         return false

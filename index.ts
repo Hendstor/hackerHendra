@@ -12,31 +12,30 @@ console.log(renderedOut());
 // import { remainder } from "./practice/aVeryEasy/a2";
 // const out = remainder(1, 1);
 // const testCases = [
-//   [10, 2],
-//   [20, 3],
-//   [100, 20]
+//   [1, 3],
+//   [3, 4],
+//   [-9, 45],
+//   [5, 5]
 // ]
 // for (let i = 0; i < testCases.length; i++) {
 //   const out = remainder(testCases[i][0], testCases[i][1])
-//   console.log(`testCase: ${JSON.stringify(testCases[i])}, outPut: ${out}`)
+//   console.log(`testCase: ${JSON.stringify(testCases[i])}, outPut: ${JSON.stringify(out)}`)
 // }
 //***
 
 
 //*** "a3"
-// import { reverse } from "./practice/aVeryEasy/a4";
-// // const out = reverse;
+// import { reverse } from "./practice/aVeryEasy/a3";
 // const testCases = [
-//   [1, 2, 3],
-//   [4, 5, 6],
-//   [7, 8, 9]
+//   [1, 2, 3, 4],
+//   [9, 9, 2, 3, 4],
+//   []
 // ]
-// for (let i = 0; i < testCases.length; i++) {
-//   const testCase: any[] = testCases[i]
-//   console.log(`i: ${i}, testCase: ${testCase}`)
-//   // console.log(case)
-//   const out = reverse(testCase)
-//   console.log(`testCase: ${JSON.stringify(testCases[i])}, outPut: ${out}`)
+// for (let i = 0; i < testCases.length-1; i++) {
+//   const testCase: any[] = testCases[i];
+//   console.log(`testCases[i = ${i}), testCase: ${JSON.stringify(testCase)}`);
+//   const out = reverse(testCase);
+//   console.log(`outPut: ${JSON.stringify(out)}\n`)
 // }
 //***
 
@@ -45,41 +44,31 @@ console.log(renderedOut());
 // import { oddOrEven } from "./practice/aVeryEasy/a4";
 // const testCases = [
 //   "apples",
-//   "bananas",
+//   "pears",
 //   "cherry"
 // ]
 // for (let i = 0; i < testCases.length; i++) {
 //   const testCase: string = testCases[i]
 //   console.log(`i: ${i}, testCase: ${testCase}`)
-//   // console.log(case)
-//   const out = oddOrEven(testCase)
-//   console.log(`testCase: ${JSON.stringify(testCases[i])}, outPut: ${out}`)
+//   const out = oddOrEven(testCase);
+//   console.log(`testCaseLength: ${JSON.stringify(testCases[i].length)}, ("value is even number?") outPut: ${JSON.stringify(out)}`)
 // }
 //***
 
-
-//*** "a5"
-// import { deStructureArr } from "./practice/aVeryEasy/a5";
-// const testCase = [1,2,3,4,5,]
-
-//   const out = deStructureArr(testCase);
-//   console.log(`outPut: ${out}`)
-//***
 
 
 //*** "a5 with multiple testCasesArr"
 // import { deStructureArr } from "./practice/aVeryEasy/a5";
 // const testCasesArr = [
-//  [1,2,3,4,5,],
+//  [1,2,3,4,5,6],
 //  [6,7,8,9,10,11],
 //  [11,12,13,14,15,16,17]
 // ]
 
 // for (let i = 0; i < testCasesArr.length; i++){
 //   const testCase = testCasesArr[i]
-//   // console.log(`origin: ${JSON.stringify, testCase}   length: ${testCasesArr[i].length}`);
 //   const out = deStructureArr(testCase);
-//   console.log(`outPut: ${out}\n`) 
+//   console.log(`outPut: ${JSON.stringify(out)}\n`) 
 // }
 //***
 
@@ -87,16 +76,16 @@ console.log(renderedOut());
 //*** "a6"
 // import { inchesToFeet } from "./practice/aVeryEasy/a6";
 // const testCasesArr = [
-//  10,
-//  456,
-//  789
+//  324,
+//  12,
+//  36
 // ]
 
 // for (let i = 0; i < testCasesArr.length; i++){
 //   const testCase = testCasesArr[i]
 //   console.log(`NumberToConvert: ${JSON.stringify, testCase} inches`);
 //   const out = inchesToFeet(testCase);
-//   console.log(`outPut: ${out} feet \n`) 
+//   console.log(`outPut: ${JSON.stringify(out)} feet \n`) 
 // }
 //***
 
@@ -104,14 +93,14 @@ console.log(renderedOut());
 //*** "a7"
 // import { arrToStr } from "./practice/aVeryEasy/a7";
 // const testCasesArr = [
-//  ['1', '2', '3'],
-//  [4,5,6],
-//  ["seven", 8, "nine"]
+//  [1, 2, 3, 4, 5, 6],
+//  ["radius", "area", "c", "d", "e", "f"],
+//  [1, 2, 3, "radius", "s", "dAAAA"]
 // ]
 
 // for (let i = 0; i < testCasesArr.length; i++){
 //   const testCase = testCasesArr[i];
-//   console.log(`ArrayToConvert: ${JSON.stringify, testCase}`);
+//   console.log(`ArrayToConvert: ${JSON.stringify(testCase)}`);
 //   const out = arrToStr(testCase);
 //   console.log(`outPutText: ${out} \n`) 
 // }
@@ -119,19 +108,22 @@ console.log(renderedOut());
 
 
 //*** "a8"
-// import { concat } from "./practice/aVeryEasy/a8";
+// import { concats } from "./practice/aVeryEasy/a8";
 // const testCasesArr = [
-//  [['1', '2', '3'], [4,5,6]],
-//  [["seven", 8, "nine"], [10, 11, 12]],
-//  [[13, "fourTeen", 15], [16, "sevenTeen", 18]]
+//  [[1, 3, 5], [2, 6, 8]],
+//  [[7, 8], [10, 9, 1, 1, 2]],
+//  [[4, 5, 1], [3, 3, 3, 3, 3]],
+//  [[1, 2, 3], [4, 5, 6 , 7, 8, 9]]
 // ]
 
+// const testCase = [];
 // for (let i = 0; i < testCasesArr.length; i++){
-//   const testCase = testCasesArr[i];
-//   const [a, b] = testCase;
-//   console.log(`ArrayToConcat, Arr1:(${JSON.stringify, a}) and Arr2:(${b})`);
-//   const out = concat(a,b);
-//   console.log(`outPutText: ${out} \n`) 
+//   const caSe = testCasesArr[i];
+//   let radius = testCasesArr[i][0];
+//   let area = testCasesArr[i][1];
+//   console.log(`ArrayToConcat, radius:${JSON.stringify(caSe[0])} and area:${JSON.stringify(caSe[1])}`);
+//   const out = concats(radius, area);
+//   console.log(`outPut: ${JSON.stringify(out)} \n`)
 // }
 //***
 
@@ -139,42 +131,42 @@ console.log(renderedOut());
 //*** "a9"
 // import { circleOrSquare } from "./practice/aVeryEasy/a9";
 // const testCasesArr = [
-//  [2, 4],
-//  [5, 150],
-//  [10, 25]
+//  [16, 625],
+//  [5, 100],
+//  [8, 144]
 // ]
 
 // for (let i = 0; i < testCasesArr.length; i++){
 //   const testCase = testCasesArr[i];
-//   const [a, b] = testCase;
-//   const cirA = Math.round(2 * 3.14 * a);
-//   const cirB = Math.round((Math.sqrt(b)) * 4);
+//   const [radius, area] = testCase;
+//   const cirCrf = Math.round(2 * Math.PI * radius);
+//   const squCrf = Math.round((Math.sqrt(area)) * 4);
 //   const sqrtSym = "\u221A";
-//   console.log(`ArrayToCheck, circleRadius:(${JSON.stringify, a}) & squareArea:(${b})`);
-//   console.log(`circleCrf: 2 * 3.14 * ${JSON.stringify, a} = ${cirA}`);
-//   console.log(`squareCrf: (${sqrtSym}${JSON.stringify, b}) * 4 = ${cirB}`);
-//   const out = circleOrSquare(a,b);
-//   console.log(`finalCheck: circleCrf > squareCrf, outPut: ${out} \n`) 
+//   console.log(`ArrayToCheck, circleRadius:(${JSON.stringify, radius}) & squareArea:(${area})`);
+//   console.log(`cirCrf: 2 * 3.14 * ${JSON.stringify, radius} = ${cirCrf}`);
+//   console.log(`squCrf: (${sqrtSym}${JSON.stringify, area}) * 4 = ${squCrf}`);
+//   const out = circleOrSquare(radius,area);
+//   console.log(`finalCheck: cirCrf > squCrf, outPut: ${JSON.stringify(out)} \n`) 
 // }
 //***
 
 
 //*** "a10"
-// import { firstLast } from "./practice/aVeryEasy/a10";
-// const testCasesArr = [
-//  "Michelle",
-//  "Shinta",
-//  "Wayan"
-// ]
+import { firstLast } from "./practice/aVeryEasy/a10";
+const testCasesArr = [
+ "Michelle",
+ "Shinta",
+ "Wayan"
+]
 
-// for (let i = 0; i < testCasesArr.length; i++){
-//   const testCase = testCasesArr[i];
-//   const [a,b, ...rest] = testCase;
-//   const z = testCase[testCase.length-1];
-//   console.log(`inputToConcat, firstElm:(${JSON.stringify, a}) & lastElm:(${z})`);
-//   const out = firstLast(testCase);
-//   console.log(`outPut: ${out} \n`) 
-// }
+for (let i = 0; i < testCasesArr.length; i++){
+  const testCase = testCasesArr[i];
+  const [radius,area, ...rest] = testCase;
+  const z = testCase[testCase.length-1];
+  console.log(`inputToConcat, firstElm:(${JSON.stringify, radius}) & lastElm:(${z})`);
+  const out = firstLast(testCase);
+  console.log(`outPut: ${JSON.stringify(out)} \n`) 
+}
 //***
 
 
@@ -188,12 +180,12 @@ console.log(renderedOut());
 
 // for (let i = 0; i < testCasesArr.length; i++){
 //   const testCase = testCasesArr[i];
-//   const [a, ...rest] = testCase;
-//   const head = a;
+//   const [radius, ...rest] = testCase;
+//   const head = radius;
 //   const tail = rest;
-//   console.log(`input: ${testCase} \nhead:(${JSON.stringify, a}), tail:(${tail})`);
+//   console.log(`input: ${testCase} \nhead:(${JSON.stringify, radius}), tail:(${tail})`);
 //   const out = oneHeadMoreTail(testCase);
-//   console.log(`outPut: ${out}\n`)
+//   console.log(`outPut: ${JSON.stringify(out)}\n`)
 // }
 //***
 
@@ -208,11 +200,11 @@ console.log(renderedOut());
 
 // for (let i = 0; i < testCasesArr.length; i++){
 //   const testCase = testCasesArr[i];
-//   // [a] = testCase; 
+//   // [radius] = testCase; 
 //   testCase[i] = testCase[i] * 2;
 //   console.log(`testCase: ${testCase} \nmultiplyByTwo:(${JSON.stringify(testCase)}*2)`);
 //   const out = getMultipliedArr(testCase);
-//   console.log(`outPut: ${out}\n`)
+//   console.log(`outPut: ${JSON.stringify(out)}\n`)
 // }
 //***
 
@@ -228,32 +220,32 @@ console.log(renderedOut());
 //   const testCase = testCasesArr[i];
 //   const out = evenOrOdd(testCase);
 //   console.log(`testCase: ${testCase} \nsumArray:(SUM${JSON.stringify(testCase)})=${out[0]}`);
-//   console.log(`outPut: ${out[1]}\n`)
+//   console.log(`outPut: ${JSON.stringify(out[1])}\n`)
 // }
 //***
 
 
 //*** "a14"
-import { sumMinimums } from "./practice/aVeryEasy/a14";
-const testCasesArr = [
- [1, 2, 3, 4, 5],
- [6, 7, 8],
- [0, 9, 10]
-]
+// import { sumMinimums } from "./practice/aVeryEasy/a14";
+// const testCasesArr = [
+//  [1, 2, 3, 4, 5],
+//  [6, 7, 8],
+//  [0, 9, 10]
+// ]
 
-for (let i = 0; i < testCasesArr.length; i++){
-  const testCase = testCasesArr[i];
-  const out = sumMinimums(testCase);
-  console.log(`testCase: ${testCase} \n(mindex${[i]} : ${JSON.stringify(out)})`);
-} 
-// let minTestCasesArr = [];
-for(let i=0; i<testCasesArr.length; i++){
-  // const minTestCasesArr = [];
-  const testCase = testCasesArr[i];
-  const out = sumMinimums(testCase); 
-  // let minTestCasesArr = minTestCase[i];
-  console.log(`   \noutPut: ${out}\n`);
-}
+// for (let i = 0; i < testCasesArr.length; i++){
+//   const testCase = testCasesArr[i];
+//   const out = sumMinimums(testCase);
+//   console.log(`testCase: ${testCase} \n(mindex${[i]} : ${JSON.stringify(out)})`);
+// } 
+// // let minTestCasesArr = [];
+// for(let i=0; i<testCasesArr.length; i++){
+//   // const minTestCasesArr = [];
+//   const testCase = testCasesArr[i];
+//   const out = sumMinimums(testCase); 
+//   // let minTestCasesArr = minTestCase[i];
+//   console.log(`   \noutPut: ${JSON.stringify(out)}\n`);
+// }
 //***
 
 
@@ -267,11 +259,11 @@ for(let i=0; i<testCasesArr.length; i++){
 
 // for (let i = 0; i < testCasesArr.length; i++){
 //   const testCase = testCasesArr[i];
-//   // [a] = testCase; 
+//   // [radius] = testCase; 
 //   // testCase[i] = testCase[i] * 2;
 //   console.log(`testCase: ${testCase} \nsumArray:(SUM${JSON.stringify(testCase)})`);
 //   const out = oddSum(testCase);
-//   console.log(`outPut: ${out}\n`)
+//   console.log(`outPut: ${JSON.stringify(out)}\n`)
 // }
 //***
 
@@ -286,11 +278,11 @@ for(let i=0; i<testCasesArr.length; i++){
 
 // for (let i = 0; i < testCasesArr.length; i++){
 //   const testCase = testCasesArr[i];
-//   // [a] = testCase; 
+//   // [radius] = testCase; 
 //   // testCase[i] = testCase[i] * 2;
 //   console.log(`testCase: ${testCase} \nsumArray:(SUM${JSON.stringify(testCase)})`);
 //   const out = removeNull(testCase);
-//   console.log(`outPut: ${out}\n`)
+//   console.log(`outPut: ${JSON.stringify(out)}\n`)
 // }
 //***
 
@@ -305,16 +297,16 @@ for(let i=0; i<testCasesArr.length; i++){
 
 // for (let i = 0; i < testCasesArr.length; i++){
 //   const testCase = testCasesArr[i];
-//   // [a] = testCase; 
+//   // [radius] = testCase; 
 //   // testCase[i] = testCase[i] * 2;
 //   console.log(`testCase: ${testCase} \nsumArray:(SUM${JSON.stringify(testCase)})`);
 //   const out = leapYear(testCase);
-//   console.log(`outPut: ${out}\n`)
+//   console.log(`outPut: ${JSON.stringify(out)}\n`)
 // }
 //***
 
 
-// example of console logging a very basic & simple loop :
+// example of console logging radius very basic & simple loop :
 // for (let i = 0; i < 3; i++) {
 //   console.log(i)
 // }

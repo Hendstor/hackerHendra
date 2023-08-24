@@ -1,4 +1,4 @@
-export function arrToStr(arr: any){
+export function arrToStr(arr: any[]): string{
     // TODO: fix
-    return `${arr}`
+    return `${JSON.stringify(arr.join(""))}`
 }
