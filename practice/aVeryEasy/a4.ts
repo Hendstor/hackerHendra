@@ -1,6 +1,6 @@
 export function oddOrEven(s: string): boolean {
     // WTF is this loop    
-    for(let i= 0; i <= s.length; i++){
+    for(let i= 0; i < s.length; i++){
         s.length
     }
     // return true if even, false if odd. 
